@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label class="img-container">
+                <input type="radio" name="animal" value="perro" checked>
+                <img src="perro.png" alt="Perro" class="animal-img">
+            </label>
+            <label class="img-container">
+                <input type="radio" name="animal" value="gato">
+                <img src="gato.png" alt="Gato" class="animal-img">
+            </label>
+            
+            </select>
+            <label for="edadHumano">Ingresa la edad del animal en años humanos:</label>
+            <input type="number" id="edadHumano" name="edadHumano">
+            <button type="button" id="calcular" onclick="calcularEdadAnimals(event)">Calcular</button>
+            <div id="result"></div>
+        </form>
+    </div>
+    <center>
+    </center>
+    <script type="text/javascript" src="script3.js"></script>
+</body>
+</html>
