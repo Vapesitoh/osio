@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>Document</title>
+    <link rel="icon" href="favicon.ico">
+    <title>edad</title>
 </head>
 <body>
     <div class="container">
         <form>
+            <h1>Selecciona tu mascota</h1>
             <label class="img-container">
                 <input type="radio" name="animal" value="perro" checked>
                 <img src="perro.png" alt="Perro" class="animal-img">
-            </label>
+            </label><br></br>
             <label class="img-container">
                 <input type="radio" name="animal" value="gato">
                 <img src="gato.png" alt="Gato" class="animal-img">
-            </label>
+            </label><br></br>
             
             </select>
-            <label for="edadHumano">Ingresa la edad del animal en años humanos:</label>
+            <label for="edadHumano">Ingresa cuantos años tiene nostros calculamos que edad realmente tiene</label>
             <input type="number" id="edadHumano" name="edadHumano">
             <button type="button" id="calcular" onclick="calcularEdadAnimals(event)">Calcular</button>
             <div id="result"></div>
