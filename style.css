@@ -1,29 +1,21 @@
-/* Cambiar logo principal */
-.skinHeader.withBackdrop .headerLogo,
+/* Forzar tu logo en el encabezado principal */
 .pageTitleWithDefaultLogo .logo {
     background-image: url("https://vanesol.com/img/logovanesol.png") !important;
-    background-size: contain !important;
     background-repeat: no-repeat !important;
+    background-size: contain !important;
     width: 180px !important;
     height: 60px !important;
-    content: "" !important;
     display: block !important;
+    content: "" !important;
     text-indent: -9999px !important;
-}
-.skinHeader.withBackdrop .headerLogo > img,
-.pageTitleWithDefaultLogo .logo > img {
-    display: none !important;
+    overflow: hidden !important;
 }
 
-/* Cambiar logo de carga */
-.splashLogo {
-    background-image: url("https://vanesol.com/img/logovanesol.png") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    width: 200px !important;
-    height: 200px !important;
-    content: "" !important;
-}
-.splashLogo > img {
+/* Ocultar completamente el logo original */
+.pageTitleWithDefaultLogo .logo > img {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
 }
